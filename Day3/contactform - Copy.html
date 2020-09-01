@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Atiq Israk</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Roboto;
+      font-style: normal;
+    }
+
+    #contact_one {
+      background: url('https://res.cloudinary.com/dtyrfo0fx/image/upload/q_auto/v1591628524/hng%20granite/Rectangle_2_1.png') no-repeat center center fixed;
+      background-size: cover;
+      background-color: grey;
+      width: 100%;
+      height: 500px;
+      position: relative;
+    }
+
+    @keyframes specialanim {
+      from {
+        top: -315px;
+      }
+
+      to {
+        top: 0px;
+      }
+    }
+
+    .specialoffer {
+      position: absolute;
+      top: -315px;
+      right: 100px;
+      animation: specialanim 1s ease 0.5s 1 forwards;
+    }
+
+    @keyframes locationcent {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .locatedcentered {
+      text-align: center;
+      margin: 130px 0 130px 0;
+      color: #333333;
+    }
+
+    .locatedcentered>p {
+      width: 45%;
+      display: inline-block;
+      opacity: 0;
+      line-height: 1.5rem;
+      font-size: 1.3rem;
+      animation: locationcent 1.3s ease 1.5s 1 forwards;
+    }
+
+    .contactussection {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      margin: 120px auto;
+      width: 80%;
+      grid-column-gap: 120px;
+    }
+
+    .contactussection a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .contactussection input,
+    .contactussection textarea {
+      outline: none;
+    }
+
+    .contactussection .socials i {
+      cursor: pointer;
+    }
+
+    h4 {
+      padding: 15px 10px;
+    }
+
+    input,
+    textarea,
+    button {
+      text-decoration: none;
+      padding: 12px 20px;
+      border: 1px solid #144673;
+      border-radius: 8px;
+      font-size: 18px;
+      margin: 0 0 15px 0;
+    }
+
+    .contactussection input {
+      width: 48%
+    }
+
+    .contactussection input[type='button'],
+    textarea {
+      width: 100%
+    }
+
+    @keyframes shake {
+
+      10%,
+      90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+
+      20%,
+      80% {
+        transform: translate3d(2px, 0, 0);
+      }
+
+      30%,
+      50%,
+      70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+
+      40%,
+      60% {
+        transform: translate3d(4px, 0, 0);
+      }
+    }
+
+    .contactussection input[type='button']:hover {
+      animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      perspective: 1000px;
+    }
+
+    .contactussection input[type='button'] {
+      background: #144673;
+      color: white;
+      cursor: pointer;
+    }
+
+    button {
+      border: 1px solid #F5FAFF;
+      color: #F5FAFF;
+      padding: 5px !important;
+      background: none;
+      margin-top: 15px;
+      width: 100%;
+    }
+
+    .required div {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .inline {
+      display: flex;
+      width: 100%;
+      align-items: baseline;
+    }
+
+    i {
+      padding: 10px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      .contactussection {
+        grid-template-columns: 1fr;
+      }
+
+      aside {
+        margin-top: 90px;
+      }
+
+      .specialoffer {
+        display: none;
+      }
+
+      .required div {
+        display: block;
+      }
+
+      input {
+        width: 100%
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="contact_one">
+    <div class="contact_one_text">
+      <h1>Contact Atiq Israk</h1>
+    </div>
+  </div>
+  <!-- <div class="locatedcentered">
+    <p class="locatedbolder">Here it begins.</p>
+    <br />
+    <p>
+      It is located in the heart of Bogra.
+    </p>
+  </div>
+  <div id="contact_map">
+    <div class="contact_map_action">
+      <div>
+        <p>Click on the button to show map</p>
+        <button>Show the Map</button>
+      </div>
+    </div> -->
+    <section class="contactussection">
+      <form>
+        <h4>
+          SEND US AN EMAIL
+        </h4>
+        <div class="required">
+          <div>
+            <input type="text" name="firstName" placeholder="First Name" required />
+            <input type="text" name="lastName" placeholder="Last Name" required />
+          </div>
+          <div>
+            <input type="email" required placeholder="Email" required />
+            <input type="tel" required placeholder="Phone Number" required />
+          </div>
+          <textarea placeholder="message" rows="5"></textarea>
+          <input type="button" value="Submit Now" />
+        </div>
+      </form>
+      <aside>
+        <h4>CONTACT INFO</h4>
+        <div class="inline">
+          <p>
+            Professor Para,<br> Sherpur,<br> Bogra
+          </p>
+        </div>
+        <div class="inline">
+          <i class="fas fa-phone"></i>
+          <p>+880 170189 3882</p>
+        </div>
+        <div class="inline">
+          <i class="far far fa-envelope"></i>
+          <a href="https://atiqisrak.netlify.com">atiqisrak@gmail.com</a>
+        </div>
+        <div class="socials">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </aside>
+    </section>
+    </body>
+
+</html>
