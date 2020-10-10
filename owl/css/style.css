@@ -1,0 +1,12 @@
+.wrapper{
+    width: 1600px;
+    height: auto;
+}
+.item{
+    /* background-color: orange; */
+    height: 300px;
+}
+img{
+    height: 50px;
+    width: auto;
+}

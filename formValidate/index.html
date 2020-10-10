@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation</title>
+    </head>
+    <body>
+        <script>
+            function validate(){
+                var username=document.getElementById("uname");
+                var password=document.getElementById("password");
+                
+                var cpassword=document.getElementById("cpassword");
+
+                if(username.value==""){
+                    alert("Blank Name");
+                    return false;
+                }
+                
+                else if(password.value==""){
+                    alert("Blank Password");
+                    return false;
+                }
+                else if(password.value!=cpassword.value){
+                    alert("Password didn't match");
+                    return false;
+                }
+                else
+                
+                    return true;
+            }
+        </script>
+
+        <form onsubmit="return validate()" action="msg.html">
+            username:<input type="text" id="uname"> <br><br>
+            password:<input type="password" id="password"> <br><br>
+            confirm Password:<input type="password" id="cpassword"> <br><br>
+            <button type="submit">Submit</button>
+        </form>
+
+    </body>
+</html>
